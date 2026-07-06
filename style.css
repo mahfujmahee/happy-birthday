@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:linear-gradient(135deg,#ff6ec4,#7873f5);
+    font-family:Arial,sans-serif;
+    color:white;
+    overflow:hidden;
+}
+
+h1{
+    font-size:60px;
+    text-shadow:0 0 20px rgba(255,255,255,.8);
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px white;
+    }
+    to{
+        text-shadow:0 0 35px yellow;
+    }
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    background:white;
+    color:#ff1493;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+#message{
+    margin-top:20px;
+    font-size:28px;
+}
